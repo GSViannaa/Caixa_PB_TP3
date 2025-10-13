@@ -40,3 +40,13 @@ def alterar_produtos(produtos_vendidos,produtos):
       alterar_quantidade(produto_para_alterar, produto[2])
 
 
+def atualizar_estoque(produtos_vendidos, todos_os_produtos):
+    for item in produtos_vendidos:
+        nome = item[0]
+        preco = item[1]
+        quantidade_vendida = item[2]
+
+        for produto in todos_os_produtos:
+            if produto[1] == nome and produto[3] == preco:
+                produto[2] -= quantidade_vendida
+                break

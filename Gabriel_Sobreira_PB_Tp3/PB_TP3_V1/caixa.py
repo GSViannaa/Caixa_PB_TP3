@@ -4,32 +4,52 @@ from caixa_util import *
 
 produtos = ler_produtos()
 produtos_vendidos = []
-produtos_por_cliente = []
 
-opcao = menu_entarda_opcoes()
+numero_cliente = 1
 
-numero_cleinte = 1
+def atender_cliente(produtos, numero_cliente, produtos_vendidos):
+    produtos_por_cliente = []
 
-while True:
+    while True:
+        entrada = menu_atendimento()
 
- if opcao == 1: 
-  
-   entrada = menu_atendimento()
+        if entrada == 1:
+            produto = entrar_produtos(produtos)
+            if produto:
+                produtos_por_cliente.append(produto)
+                print("Produto adicionado.")
 
-   if entrada == 1: 
-     produtos_por_cliente.append(entrar_produtos(produtos))
-     print(produtos_por_cliente)
-   elif entrada == 2:
-     imprimir_recibo(numero_cleinte, produtos_por_cliente)
-   
- elif opcao == 2:
-   print("Fechando caixa...")
-   break
+        elif entrada == 2:
+            imprimir_recibo(numero_cliente, produtos_por_cliente)
+            produtos_vendidos.append(produtos_por_cliente)
+            print(f"Atendimento ao cliente {numero_cliente} finalizado.\n")
+
+            atualizar_estoque(produtos_por_cliente, produtos)
+            gravar_produtos(produtos) 
+            
+            return numero_cliente + 1  
+        
+        else:
+            print("Entrada inválida no menu de atendimento.")
+
+def caixa(produtos):
+    numero_cliente = 1
+    produtos_vendidos = []
+
+    while True:
+        opcao = menu_entarda_opcoes()
+
+        if opcao == 1:
+            numero_cliente = atender_cliente(produtos, numero_cliente, produtos_vendidos)
+
+        elif opcao == 2:
+            print("Fechando caixa...")
+            fechamento_caixa(produtos_vendidos)
+            break
+        
+        else:
+            print("Opção inválida. Tente novamente.")
+
+
  
- else: 
-   print("Opção invalida")
-   opcao = menu_entarda_opcoes()
- 
-
-
- 
+caixa(produtos)

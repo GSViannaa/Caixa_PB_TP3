@@ -27,3 +27,10 @@ def ler_produtos():
 
    return produtos
 
+def gravar_produtos(produtos):
+    try:
+       with open(ARQ, "w", encoding="utf-8") as arquivo:
+        for p in produtos:
+            arquivo.write(f"{p[0]},{p[1]},{p[2]},{p[3]}\n")
+    except Exception as  ex:
+       print("Erro")
