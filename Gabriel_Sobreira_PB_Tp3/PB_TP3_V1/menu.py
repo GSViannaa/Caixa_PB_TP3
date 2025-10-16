@@ -16,6 +16,6 @@ def menu_atendimento():
     print("[1] - Escanear produto")
     print("[2] - Encerrar atendimento")
 
-    opcao = entrar_inteiro("Esolha uma opção:")
+    opcao = entrar_inteiro("Escolha uma opção:")
 
     return opcao

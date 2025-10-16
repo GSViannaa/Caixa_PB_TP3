@@ -44,7 +44,7 @@ def caixa(produtos):
 
         elif opcao == 2:
             print("Fechando caixa...")
-            fechamento_caixa(produtos_vendidos)
+            fechamento_caixa(produtos_vendidos,produtos)
             break
         
         else:

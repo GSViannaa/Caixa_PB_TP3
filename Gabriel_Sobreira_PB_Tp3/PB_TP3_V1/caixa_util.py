@@ -14,7 +14,7 @@ def entrar_produtos(produtos):
         preco_produto = get_produto_preco(id_produto, produtos)
         
 
-        qtd_produto = entrar_positivo("Entre com a quantidade de pedidos:")
+        qtd_produto = entrar_positivo("Entre com a quantidade de produtos:")
 
         total_compra = qtd_produto * preco_produto
 
@@ -35,7 +35,7 @@ def imprimir_recibo(cliente, produtos):
     print(f"\nCliente {cliente}")
     print(f"Data: {data}")
     print()
-    print(f"{'Item':<5} {'Produto':<10} {'Quant.':<12} {'Preço':<7} {'Total':<7}")
+    print(f"{'Item':<5} {'Produto':<10} {'Quant.':<14} {'Preço':<7} {'Total':<7}")
     print("-" * 40)
 
     total_geral = 0
@@ -47,7 +47,7 @@ def imprimir_recibo(cliente, produtos):
         total_produto = produto[3]
         
         total_geral += total_produto
-        print(f"{i:<5} {nome_produto:<10} {quantidade:<12} {preco:<7} {total_produto:<7}")
+        print(f"{i:<5} {nome_produto:<10} {quantidade:<14} {preco:<7} {total_produto:<7}")
 
     print()
     print(f"produto: {len(produto)}")
@@ -55,7 +55,21 @@ def imprimir_recibo(cliente, produtos):
     print("-" * 40)
 
 
-def fechamento_caixa(todos_os_recibos):
+def verificar_estoque(produtos):
+
+    produtos_sem_estoque = []
+
+    for p in produtos:
+
+        if p[2] <=0: 
+            produtos_sem_estoque.append(p[1])
+
+    return produtos_sem_estoque
+
+def fechamento_caixa(todos_os_recibos, produtos):
+
+    produtos_sem_estoque = verificar_estoque(produtos)
+
     print("\n\n=== FECHAMENTO DE CAIXA ===")
     total_clientes = len(todos_os_recibos)
     total_itens = 0
@@ -76,6 +90,12 @@ def fechamento_caixa(todos_os_recibos):
     print(f"Total de clientes: {total_clientes}")
     print(f"Total de itens vendidos: {total_itens}")
     print(f"Total arrecadado: {total_caixa:.2f}")
+    print("============================\n")
+
+    
+    print("\n========= Produtos sem estoque ========")
+    for p in produtos_sem_estoque:
+        print(f"O produto {p} ficou sem estoque")
     print("============================\n")
 
  
