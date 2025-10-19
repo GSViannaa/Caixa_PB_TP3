@@ -25,8 +25,10 @@ def entrar_positivo(msg):
          
          print("Erro: Valor inválido")
 
-     if entrada <= 0:
-        print("Erro: Valor negativo")
+     if entrada == 0:
+        print("Erro:quantidade deve ser maior que zero")
+     elif entrada < 0:
+        print("Erro: qauntidade deve ser positiva")
      else:
         return entrada
    

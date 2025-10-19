@@ -1,5 +1,6 @@
 from crud import *
 from datetime import datetime
+from tabulate import tabulate
 from util import *
 
 def entrar_produtos(produtos):
@@ -32,11 +33,12 @@ def entrar_produtos(produtos):
 
 def imprimir_recibo(cliente, produtos):
     data = datetime.now().strftime("%d/%m/%Y %H:%M")
-    print(f"\nCliente {cliente}")
+    print(f"Cliente {cliente}")
     print(f"Data: {data}")
     print()
-    print(f"{'Item':<5} {'Produto':<10} {'Quant.':<14} {'Preço':<7} {'Total':<7}")
-    print("-" * 40)
+
+    print(f"{'Item':<6}{'Produto':<20}{'Quant.':<10}{'Preço':<10}{'Total':<10}")
+    print(f"{'-'*6}{'-'*20}{'-'*10}{'-'*10}{'-'*10}")
 
     total_geral = 0
 
@@ -45,14 +47,14 @@ def imprimir_recibo(cliente, produtos):
         preco = produto[1]
         quantidade = produto[2]
         total_produto = produto[3]
-        
         total_geral += total_produto
-        print(f"{i:<5} {nome_produto:<10} {quantidade:<14} {preco:<7} {total_produto:<7}")
 
+        print(f"{i:<6}{nome_produto:<20}{quantidade:<10}{preco:<10.2f}{total_produto:<10.2f}")
+
+    print(f"{'-'*6}{'-'*20}{'-'*10}{'-'*10}{'-'*10}")
     print()
-    print(f"produto: {len(produto)}")
+    print(f"Itens: {len(produtos)}")
     print(f"Total: {total_geral:.2f}")
-    print("-" * 40)
 
 
 def verificar_estoque(produtos):
@@ -93,10 +95,10 @@ def fechamento_caixa(todos_os_recibos, produtos):
     print("============================\n")
 
     
-    print("\n========= Produtos sem estoque ========")
+    print("\n========= Produtos sem estoque ==========")
     for p in produtos_sem_estoque:
         print(f"O produto {p} ficou sem estoque")
-    print("============================\n")
+    print("===========================================\n")
 
  
    

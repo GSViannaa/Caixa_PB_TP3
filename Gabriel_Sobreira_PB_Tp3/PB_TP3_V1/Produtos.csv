@@ -1,20 +1,20 @@
-1,Maçã Gala (kg),0,8.99
-2,Banana Prata (kg),0,6.49
-3,Batata Inglesa (kg),120,5.99
+1,Maçã Gala (kg),14,8.99
+2,Banana Prata (kg),2,6.49
+3,Batata Inglesa (kg),108,5.99
 4,Cenoura (kg),60,4.5
 5,Alface Crespa (unidade),40,3.29
-6,Tomate Italiano (kg),55,7.99
-7,Pão Francês (unidade),200,0.85
+6,Tomate Italiano (kg),53,7.99
+7,Pão Francês (unidade),188,0.85
 8,Pão de Forma Tradicional (pacote),60,8.99
 9,Café em Pó Tradicional (500g),70,18.9
 10,Leite Integral UHT (litro),150,5.29
 11,Manteiga com Sal (200g),44,12.5
-12,Requeijão Cremoso (200g),50,9.99
+12,Requeijão Cremoso (200g),49,9.99
 13,Queijo Mussarela Fatiado (200g),40,11.9
 14,Peito de Peru Fatiado (200g),35,13.5
 15,Arroz Branco Tipo 1 (5kg),100,28.9
 16,Feijão Carioca Tipo 1 (1kg),110,9.5
-17,Açúcar Refinado (1kg),130,5.89
+17,Açúcar Refinado (1kg),127,5.89
 18,Sal Refinado (1kg),150,3.5
 19,Óleo de Soja (900ml),95,8.99
 20,Azeite de Oliva Extra Virgem (500ml),50,35.9
@@ -23,13 +23,138 @@
 23,Peito de Frango Congelado (kg),78,18.9
 24,Carne Moída de Primeira (kg),60,39.9
 25,Ovos Brancos (dúzia),100,12.99
-26,Refrigerante Cola (2L),78,9.5
+26,Refrigerante Cola (2L),77,9.5
 27,Água Mineral sem Gás (1.5L),120,3.5
 28,Cerveja Pilsen (lata 350ml),250,3.99
 29,Detergente Líquido Neutro (500ml),100,2.99
 30,Sabão em Pó (1.6kg),70,23.9
 31,Água Sanitária (2L),80,7.5
-32,Sabonete em Barra (90g),150,2.5
-33,Creme Dental (90g),130,4.9
-34,Papel Higiênico (12 rolos),85,19.99
+32,Sabonete em Barra (90g),149,2.5
+33,Creme Dental (90g),129,4.9
+34,Papel Higiênico (12 rolos),82,19.99
 35,Desodorante Aerosol (150ml),0,16.5
+36,Tomate Italiano (kg),75,7.99 
+37,Cebola Pera (kg),90,5.49 
+38,Arroz Branco Tipo 1 (5kg),50,28.90 
+39,Feijão Carioca Tipo 1 (1kg),65,8.79 
+40,Óleo de Soja (900ml),80,7.29 
+41,Açúcar Refinado (1kg),100,5.99 
+42,Café Torrado e Moído (500g),45,16.50  
+43,Pão de Forma Tradicional (500g),30,9.90 
+44,Manteiga com Sal (200g),25,12.99 
+45,Queijo Mussarela Fatiado (200g),35,11.50 
+46,Presunto Cozido Fatiado (200g),30,9.80 
+47,Ovos Brancos (dúzia),55,14.99 
+48,Frango Peito (kg),40,18.90 
+49,Carne Moída Patinho (kg),30,35.90 
+50,Linguiça Toscana (kg),28,22.99 
+51,Macarrão Espaguete (500g),70,4.29 
+52,Molho de Tomate Tradicional (340g),60,3.19 
+53,Milho Verde em Conserva (lata),50,3.99 
+54,Ervilha em Conserva (lata),48,3.79 
+55,Azeite Extra Virgem (500ml),20,32.90 
+56,Vinagre de Álcool (750ml),40,3.49 
+57,Sal Refinado (1kg),90,2.99 
+58,Farinha de Trigo (1kg),75,6.19 
+59,Biscoito Cream Cracker (200g),50,4.50 
+60,Refrigerante Cola (2L),60,9.49 
+61,Suco de Laranja Integral (1L),30,11.99 
+62,Água Mineral sem Gás (1.5L),90,2.79 
+63,Cerveja Pilsen (lata 350ml),150,3.69 
+64,Iogurte Natural (170g),40,3.29 
+65,Requeijão Cremoso (200g),35,8.99 
+66,Sabão em Pó (1kg),40,15.90 
+67,Amaciante de Roupas (2L),30,19.90 
+68,Água Sanitária (1L),60,4.99 
+69,Detergente Líquido (500ml),100,2.89 
+70,Esponja Multiuso (unidade),70,2.19 
+71,Papel Higiênico (pacote 12 rolos),50,24.90 
+72,Shampoo Neutro (350ml),30,14.50 
+73,Condicionador Neutro (350ml),30,15.50 
+74,Sabonete em Barra (90g),120,2.49 
+75,Creme Dental (90g),80,5.99 
+76,Laranja Pera (kg),50,4.99 
+77,Mamão Papaia (unidade),25,6.99 
+78,Abacaxi Pérola (unidade),20,8.50 
+79,Pimentão Verde (kg),30,9.90 
+80,Brócolis Ninja (unidade),25,7.49
+81,Maçã Fuji (kg),16,9.49
+82,Banana Nanica (kg),3,6.19
+83,Batata Doce (kg),120,6.29
+84,Beterraba (kg),58,4.39
+85,Alface Americana (unidade),48,3.59
+86,Tomate Cereja (bandeja),60,8.49
+87,Pão Integral (unidade),180,0.89
+88,Pão de Centeio (pacote),55,9.29
+89,Café Gourmet (500g),68,19.49
+90,Leite Desnatado UHT (litro),140,5.49
+91,Manteiga sem Sal (200g),50,13.29
+92,Requeijão Light (200g),52,10.49
+93,Queijo Prato Fatiado (200g),38,12.29
+94,Peito de Peru Defumado (200g),32,14.19
+95,Arroz Integral (5kg),95,29.59
+96,Feijão Preto (1kg),105,9.19
+97,Açúcar Mascavo (1kg),118,6.29
+98,Sal Grosso (1kg),155,3.79
+99,Óleo de Girassol (900ml),90,9.49
+100,Azeite Português Extra Virgem (500ml),45,37.29
+101,Macarrão Penne (500g),110,5.19
+102,Molho de Tomate com Manjericão (sachê),80,4.09
+103,Filé de Frango Congelado (kg),70,19.59
+104,Carne de Segunda (kg),55,36.49
+105,Ovos Caipiras (dúzia),92,13.49
+106,Refrigerante Guaraná (2L),70,9.19
+107,Água Mineral com Gás (1.5L),125,3.69
+108,Cerveja Puro Malte (lata 350ml),260,4.19
+109,Detergente Limão (500ml),95,3.19
+110,Sabão Líquido (1.6kg),65,24.49
+111,Desinfetante Floral (2L),85,7.79
+112,Sabonete Líquido (250ml),140,2.69
+113,Creme Dental Menta (90g),120,5.19
+114,Papel Toalha (2 rolos),90,6.49
+115,Desodorante Roll-on (50ml),10,15.99
+116,Tomate Caqui (kg),70,8.19
+117,Cebola Roxa (kg),85,5.69
+118,Arroz Parboilizado (5kg),55,29.19
+119,Feijão Preto Premium (1kg),70,8.99
+120,Óleo de Milho (900ml),85,7.89
+121,Açúcar Cristal (1kg),95,5.79
+122,Café Expresso (500g),40,17.19
+123,Pão de Forma Integral (500g),28,10.19
+124,Manteiga Extra (200g),27,13.29
+125,Queijo Minas Fatiado (200g),33,12.29
+126,Presunto Defumado (200g),28,10.19
+127,Ovos Vermelhos (dúzia),60,15.49
+128,Filé de Peito de Frango (kg),42,19.39
+129,Carne Moída Acém (kg),32,34.59
+130,Linguiça Calabresa (kg),30,23.59
+131,Macarrão Parafuso (500g),75,4.59
+132,Molho de Tomate Picante (340g),58,3.39
+133,Milho Verde Doce (lata),52,4.09
+134,Ervilha Congelada (pacote),46,3.89
+135,Azeite Espanhol Extra Virgem (500ml),22,33.49
+136,Vinagre de Maçã (750ml),38,3.69
+137,Sal Light (1kg),88,3.09
+138,Farinha Integral (1kg),70,6.49
+139,Biscoito Água e Sal (200g),48,4.59
+140,Refrigerante Laranja (2L),62,9.79
+141,Suco de Uva Integral (1L),28,12.49
+142,Água Mineral com Gás (1.5L),85,2.99
+143,Cerveja Artesanal (lata 350ml),130,4.19
+144,Iogurte Grego (170g),42,3.59
+145,Requeijão Tradicional (200g),33,9.59
+146,Sabão em Barra (1kg),38,16.19
+147,Amaciante Concentrado (2L),28,20.19
+148,Água Sanitária Premium (1L),58,5.19
+149,Detergente Coco (500ml),95,3.09
+150,Esponja de Aço (unidade),65,2.39
+151,Papel Higiênico Neutro (12 rolos),48,25.29
+152,Shampoo Anticaspa (350ml),28,14.79
+153,Condicionador Hidratante (350ml),27,15.79
+154,Sabonete Vegetal (90g),110,2.69
+155,Creme Dental Herbal (90g),75,6.19
+156,Laranja Lima (kg),48,5.19
+157,Mamão Formosa (unidade),23,7.49
+158,Melancia (kg),18,6.99
+159,Pimentão Vermelho (kg),28,10.49
+160,Couve-Flor (unidade),22,7.99
